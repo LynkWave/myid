@@ -38,7 +38,7 @@ Before you begin, ensure you have the following:
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/your-username/MYID.git
+   git clone https://github.com/LynkWave/MYID.git
    cd MYID
 
 npm install
