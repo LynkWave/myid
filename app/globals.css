@@ -5,7 +5,7 @@
 /* for the body*/
 body {
   margin: 0;
-  padding: 0;
+  padding: 10px;
   font-family: 'Arial', sans-serif;
   background: url('/background2.jpeg');
   background-size: cover;
@@ -30,11 +30,10 @@ body {
 
 /* Heading Styles */
 h1 {
-  color: aliceblue;
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: bold;
   margin-bottom: 1rem;
-
+  color: #d2cece;
 }
 
 h2 {
