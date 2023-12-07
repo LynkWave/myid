@@ -12,7 +12,7 @@ export default function Home() {
     <Box>
       <Navbar />
       <Content />
-      <Statics />
+      {/* <Statics /> */}
       <Compart />
       <Footer />
     </Box>

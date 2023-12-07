@@ -34,9 +34,16 @@ function DrawerAppBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            <Typography variant="h6" sx={{ my: 2 }}>
-                MYID
-            </Typography>
+            <Box sx={{ display: 'flex', gap: '1rem' }}>
+                <img width={"40"} height={"60"} style={{ borderRadius: '500px', opacity: '0.6' }} src="logo.png" alt="content" />
+
+                <Typography variant="h6" sx={{ my: 2 }}>
+                    MYID
+
+                </Typography>
+            </Box>
+
+
             <Divider />
             <List>
                 {navItems.map((item, index) => (
@@ -57,7 +64,7 @@ function DrawerAppBar(props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" sx={{ bgcolor: '#021A2F' }}>
+            <AppBar component="nav" sx={{ bgcolor: 'transparent' }}>
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -68,16 +75,19 @@ function DrawerAppBar(props) {
                     >
                         <MenuIcon />
                     </IconButton>
+
                     <Typography
-                        variant="h6"
+                        variant="h7s"
                         component="div"
                         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
+                        <img width={"40"} height={"50"} style={{ borderRadius: '500px', opacity: '0.6' }} src="logo.png" alt="content" />
+
                         MYID
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item, index) => (
-                            <Button key={item} href={hrefs[index]} sx={{ color: '#fff' }}>
+                            <Button variant='text' key={item} href={hrefs[index]} sx={{ color: '#fff' }}>
                                 {item}
                             </Button>
                         ))}

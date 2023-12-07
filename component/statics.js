@@ -3,17 +3,17 @@ import React from 'react'
 
 const Statics = () => {
     return (
-        <Container sx={{ display: 'flex', justifyContent: 'space-between', padding: '16px' }} >
+        <Container sx={{ display: 'flex', justifyContent: 'space-between' }} >
             <div>
-                <h2>20K</h2>
+                <h4>20K</h4>
                 <p>Users</p>
             </div>
             <div>
-                <h2>60K</h2>
+                <h4>60K</h4>
                 <p>Subscribes</p>
             </div>
             <div>
-                <h2>1.3K</h2>
+                <h4>1.3K</h4>
                 <p>Downloads</p>
             </div>
         </Container>
