@@ -1,53 +1,199 @@
 
 import { Box, Container } from '@mui/material'
 import React from 'react'
+import Typography from '@mui/material/Typography';
 
 
 export const Compart = () => {
     return (
         <Box sx={{
+            padding: '50px',
+            paddingY: '50px',
+            padding: '50px',
             display: 'flex',
-            flexDirection: { xs: 'column', md: 'row' },
             justifyContent: 'space-between',
             alignItems: 'center',
-            gap: '1rem',
-            marginTop: '5vh',
             width: '100%', // You can adjust the width as needed
             // Add other styles as needed
         }}>
-            <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
-                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', bgcolor: 'black', opacity: '0.7', borderRadius: '1rem', padding: '1rem' }}>
-                    <img width={"300"} height={"400"} style={{ borderRadius: '500px', opacity: '0.8' }} src="compart2.jpeg" alt="content" />
-                    {/* <h2 >MYID</h2> */}
-                    <h2>MYID for Web 3.0</h2>
-                    <h4>MYID aggregation is the integration of digital identities from multiple networks.This approach aids in situations requiring identity data, such as KYC, credit scores, or credentials.</h4>
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRadius:'16px', width: '300px', height: "200px", overflow: "hidden" }}>
+                    <img 
+                    data-aos="zoom-out"
+                    data-aos-once="true"
+                    data-aos-duration="1000"
+                    // data-aos-delay="800"
+                    // width="100%"
+                    height="100%"
+                    objectFit="cover"
+                    // height={"400"} 
+                    style={{borderRadius: '10px', margin: "20px", objectFit: "fill"}}
+                    src="compart2.jpeg" 
+                    alt="content" />
                 </Box>
+                    <Typography variant="h4"
+                        sx={{
+                            fontWeight: 'bold',
+                            fontSize: 'lg',
+                            width: 'full',
+                            display: 'inline',
+                            whiteSpace: 'nowrap',
+                            color: 'white'
+                        }}
+                        data-aos="flip-up"
+                        data-aos-once="true"
+                        data-aos-duration="1500"
+                        data-aos-delay="100"
+                    >MyID</Typography>
+                    <Typography variant="h6"
+                        sx={{
+                            fontWeight: 'bold',
+                            fontSize: 'lg',
+                            width: 'full',
+                            display: 'inline',
+                            whiteSpace: 'nowrap',
+                            color: 'white'
+                        }}
+                        data-aos="flip-up"
+                        data-aos-once="true"
+                        data-aos-duration="1500"
+                        data-aos-delay="200"
+                    >Data Aggregation</Typography>
+                    {/* <h4>MYID aggregation is the integration of digital identities from multiple networks.This approach aids in situations requiring identity data, such as KYC, credit scores, or credentials.</h4> */}
             </Box>
-            <Box>
-                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', bgcolor: '#021A2F', opacity: '0.7', borderRadius: '1rem', padding: '1rem' }}>
-                    <img width={"300"} height={"400"} style={{ borderRadius: '300px', opacity: '1' }} src="/compart1.jpeg" alt="content" />
-                    {/* <h2 >MYID</h2> */}
-                    <h2>Technolgy Path</h2>
-                    <h4>MyID facilitates creating and verifying digital identities, ensuring secure and efficient user interactions with online services. Its primary function is identity management in the digital realm. </h4>
-                </Box>
-            </Box>
-            <Box>
-                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', bgcolor: 'black', opacity: '0.7', borderRadius: '1rem', padding: '1rem' }}>
-                    <img width={"300"} height={"300"} style={{ borderRadius: '500px', opacity: '0.8' }} src="compart2.jpeg" alt="content" />
-                    {/* <h2>MYID</h2> */}
-                    <h2>Data in MYID</h2>
-                    <h4>"MYID gathers user data from registries and services, including blockchain records (transactions, chain states), and social media APIs, ensuring comprehensive information collection and utilization."</h4>
-                </Box>
-            </Box>
-            <Box>
-                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', bgcolor: "#021A2F", opacity: '0.7', borderRadius: '1rem', padding: '1rem' }}>
-                    <img width={"300"} height={"400"} style={{ borderRadius: '300px', opacity: '0.8' }} src="/roadmap.jpeg" alt="content" />
-                    {/* <h2>MYID</h2> */}
-                    <h2>Data Aggregation</h2>
-                    <h4>MYID processes and consolidates analyzed identity data, ensuring consistency, and computes an Identity Score by merging information from various platforms, offering accurate and reliable identity insights. </h4>
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRadius:'16px', width: '300px', height: "200px", overflow: "hidden" }}>
+                    <img 
+                    data-aos="zoom-out"
+                    data-aos-once="true"
+                    data-aos-duration="1000"
+                    data-aos-delay="300"
+                    // width="100%"
+                    height="100%"
+                    objectFit="cover"
+                    // height={"400"} 
+                    style={{borderRadius: '10px', margin: "20px", objectFit: "fill"}}
+                    src="compart1.jpeg" 
+                    alt="content" />
                 </Box>
 
+                    <Typography variant="h4"
+                        sx={{
+                            fontWeight: 'bold',
+                            fontSize: 'lg',
+                            width: 'full',
+                            display: 'inline',
+                            whiteSpace: 'nowrap',
+                            color: 'white'
+                        }}
+                        data-aos="flip-up"
+                        data-aos-once="true"
+                        data-aos-duration="1500"
+                        data-aos-delay="400"
+                    >MyID</Typography>
+                    <Typography variant="h6"
+                        sx={{
+                            fontWeight: 'bold',
+                            fontSize: 'lg',
+                            width: 'full',
+                            display: 'inline',
+                            whiteSpace: 'nowrap',
+                            color: 'white'
+                        }}
+                        data-aos="flip-up"
+                        data-aos-once="true"
+                        data-aos-duration="1500"
+                        data-aos-delay="500"
+                    >Technology Path</Typography>
+                    {/* <h4>MYID aggregation is the integration of digital identities from multiple networks.This approach aids in situations requiring identity data, such as KYC, credit scores, or credentials.</h4> */}
             </Box>
-        </Box >
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRadius:'16px', width: '300px', height: "200px", overflow: "hidden" }}>
+                    <img 
+                    data-aos="zoom-out"
+                    data-aos-once="true"
+                    data-aos-duration="1000"
+                    data-aos-delay="600"
+                    width={"400"} 
+                    height={"400"} 
+                    style={{borderRadius: '10px', margin: "20px"}}
+                    src="roadmap.jpeg" 
+                    alt="content" />
+                </Box>
+
+                    <Typography variant="h4"
+                        sx={{
+                            fontWeight: 'bold',
+                            fontSize: 'lg',
+                            width: 'full',
+                            display: 'inline',
+                            whiteSpace: 'nowrap',
+                            color: 'white'
+                        }}
+                        data-aos="flip-up"
+                        data-aos-once="true"
+                        data-aos-duration="1500"
+                        data-aos-delay="700"
+                    >MyID</Typography>
+                    <Typography variant="h6"
+                        sx={{
+                            fontWeight: 'bold',
+                            fontSize: 'lg',
+                            width: 'full',
+                            display: 'inline',
+                            whiteSpace: 'nowrap',
+                            color: 'white'
+                        }}
+                        data-aos="flip-up"
+                        data-aos-once="true"
+                        data-aos-duration="1500"
+                        data-aos-delay="800"
+                    >Data in MyID</Typography>
+                    {/* <h4>MYID aggregation is the integration of digital identities from multiple networks.This approach aids in situations requiring identity data, such as KYC, credit scores, or credentials.</h4> */}
+            </Box>
+            <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center' }}>
+                <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', borderRadius:'16px', width: '300px', height: "200px", overflow: "hidden" }}>
+                    <img 
+                    data-aos="zoom-out"
+                    data-aos-once="true"
+                    data-aos-duration="1000"
+                    data-aos-delay="900"
+                    width={"400"} 
+                    height={"400"} 
+                    style={{borderRadius: '10px', margin: "20px"}}
+                    src="compart2.jpeg" 
+                    alt="content" />
+                </Box>
+                    <Typography variant="h4"
+                        sx={{
+                            fontWeight: 'bold',
+                            fontSize: 'lg',
+                            width: 'full',
+                            display: 'inline',
+                            whiteSpace: 'nowrap',
+                            color: 'white'
+                        }}
+                        data-aos="flip-up"
+                        data-aos-once="true"
+                        data-aos-duration="1500"
+                        data-aos-delay="1000"
+                    >MyID</Typography>
+                    <Typography variant="h6"
+                        sx={{
+                            fontWeight: 'bold',
+                            fontSize: 'lg',
+                            width: 'full',
+                            display: 'inline',
+                            whiteSpace: 'nowrap',
+                            color: 'white'
+                        }}
+                        data-aos="flip-up"
+                        data-aos-once="true"
+                        data-aos-duration="1500"
+                        data-aos-delay="1100"
+                    >Data Aggregation</Typography>
+                    {/* <h4>MYID aggregation is the integration of digital identities from multiple networks.This approach aids in situations requiring identity data, such as KYC, credit scores, or credentials.</h4> */}
+            </Box>
+        </Box>
     )
 }
