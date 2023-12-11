@@ -1,20 +1,16 @@
-import Navbar from '@/component/navbar'
-import { Compart } from '@/component/compart'
+import { Compart } from '@/app/component/compart'
 // import "../app/globals.css";
 
-import Content from '@/component/content'
-import Statics from '@/component/statics'
-import Footer from '@/component/footer'
+import Content from '@/app/component/content'
+import Statics from '@/app/component/statics'
 import { Container, Box } from '@mui/material'
 
 export default function Home() {
   return (
     <Box>
-      <Navbar />
       <Content />
       {/* <Statics /> */}
       <Compart />
-      <Footer />
     </Box>
 
   )

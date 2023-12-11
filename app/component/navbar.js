@@ -20,7 +20,7 @@ import Button from '@mui/material/Button';
 const drawerWidth = 240;
 const navItems = ['Home', 'About', 'Web  3.0', 'Technology', 'Documentation'];
 const hrefs = [
-    '/', 'https://myid-1.gitbook.io/web3/about-myid', 'https://myid-1.gitbook.io/web3/about-myid', 'https://myid-1.gitbook.io/web3/technology-path', 'https://myid-1.gitbook.io/web3/'
+    '/', '/about', '/web3', '/tech', 'https://myid-1.gitbook.io/web3/'
 ];
 
 

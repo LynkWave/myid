@@ -5,7 +5,7 @@ const Content = () => {
     return (
 
         <Box sx={{
-            marginTop: '10vh',
+            marginTop: '20vh',
             display: 'flex', flexDirection: { xs: 'column', md: 'row' },
         }}>
             <Box sx={{ maxWidth: '70vh' }}>

@@ -8,8 +8,9 @@ const Footer = () => {
     return (
         <Box sx={{
             display: 'flex',
-            marginTop: '2vh',
             justifyContent: 'space-between',
+            margin: '2rem',
+            marginBottom: '1rem',
             alignItems: 'center',
             width: '100%', // You can adjust the width as needed
             // Add other styles as needed
