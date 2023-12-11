@@ -87,8 +87,11 @@ function DrawerAppBar(props) {
                     </Typography>
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item, index) => (
-                            <Button variant='text' key={item} href={hrefs[index]} sx={{ color: '#fff' }}>
-                                {item}
+                            <Button variant='text' key={item} href={hrefs[index]} sx={{ color: '#a1cff4' }}>
+                                <h3>
+                                    {item}
+                                </h3>
+
                             </Button>
                         ))}
                     </Box>
