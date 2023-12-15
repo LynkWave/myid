@@ -8,14 +8,14 @@ import { useInView } from 'react-hook-inview';
 
 const Statics = () => {
     const [inViewRef, inView] = useInView();
-    
+
     useEffect(() => {
         if (inView) {
-          setIsCounting(true);
+            setIsCounting(true);
         }
-      }, [inView]);
+    }, [inView]);
     return (
-        <Container sx={{ display: 'flex', justifyContent: 'space-between', padding: '100px'}} >
+        <Container sx={{ display: 'flex', flexDirection: { xs: "column", sm: 'row' }, justifyContent: 'space-between', padding: '100px' }} >
             <Box
                 display="flex"
                 flexDirection="column"
@@ -28,11 +28,11 @@ const Statics = () => {
                 border={1}
                 borderColor="white"
             >
-                <CountUp end='20000' duration={4} style={{ color: "white", fontSize: "70px", fontWeight: "bold" }} />
-                   
-                <Typography 
-                variant="h5"
-                sx={{fontWeight: 'bold', color: 'white'}}
+                <CountUp end='20000' duration={4} style={{ color: "white", fontSize: "3rem", fontWeight: "bold" }} />
+
+                <Typography
+                    variant="h6"
+                    sx={{ fontWeight: 'bold', color: 'white' }}
                 >
                     Users
                 </Typography>
@@ -49,11 +49,11 @@ const Statics = () => {
                 border={1}
                 borderColor="white"
             >
-                                <CountUp end='13000' duration={4} style={{ color: "white", fontSize: "70px", fontWeight: "bold" }} />
+                <CountUp end='13000' duration={4} style={{ color: "white", fontSize: "3rem", fontWeight: "bold" }} />
 
-                <Typography 
-                variant="h5"
-                sx={{fontWeight: 'bold', color: 'white'}}
+                <Typography
+                    variant="h6"
+                    sx={{ fontWeight: 'bold', color: 'white' }}
                 >
                     Downloads
                 </Typography>
@@ -70,11 +70,11 @@ const Statics = () => {
                 border={1}
                 borderColor="white"
             >
-                                <CountUp end='60000' duration={4} style={{ color: "white", fontSize: "70px", fontWeight: "bold" }} />
+                <CountUp end='60000' duration={4} style={{ color: "white", fontSize: "3rem", fontWeight: "bold" }} />
 
-                <Typography 
-                variant="h5"
-                sx={{fontWeight: 'bold', color: 'white'}}
+                <Typography
+                    variant="h6"
+                    sx={{ fontWeight: 'bold', color: 'white' }}
                 >
                     Subscribers
                 </Typography>

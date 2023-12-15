@@ -10,7 +10,7 @@ const web3 = () => {
                 </h7>
 
             </Container>
-            <Container sx={{ mt: '4rem', display: 'flex', flexDirection: "row", }} >
+            <Container sx={{ mt: '4rem', display: 'flex', flexDirection: { xs: "column", md: 'row' } }} >
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', bgcolor: 'black', opacity: '0.7', borderRadius: '1rem', padding: '1rem' }}>
                     <Typography variant='h4' color={"GrayText"} mb={'0.6rem'}> Cross-chain Identity </Typography>
                     <Container>
@@ -28,7 +28,7 @@ const web3 = () => {
                     </h5>
                 </Box>
             </Container>
-            <Container sx={{ mt: '4rem', display: 'flex', flexDirection: "row", }} >
+            <Container sx={{ mt: '4rem', display: 'flex', flexDirection: { xs: "column", md: 'row' } }} >
                 <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', bgcolor: '#021A2F', opacity: '0.7', borderRadius: '1rem', padding: '1rem' }}>
 
                     <Typography variant='h4' color={"GrayText"} mb={'0.6rem'}>

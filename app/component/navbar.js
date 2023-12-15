@@ -16,13 +16,12 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
-const { default: Link } = require("next/link")
-
+import { Dock, Newspaper } from '@mui/icons-material';
 
 const drawerWidth = 240;
-const navItems = ['Home', 'Web 3.0', 'Tech', 'Documentation'];
+const navItems = ['Home', 'Web  3.0', 'Technology', 'Career'];
 const hrefs = [
-    '/', 'web3', 'tech', 'https://myid-1.gitbook.io/web3/'
+    '/', '/web3', '/tech', '/career'
 ];
 
 
@@ -36,14 +35,15 @@ function DrawerAppBar(props) {
 
     const drawer = (
         <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-            {/* <Typography variant="h6" sx={{ my: 2, cursor:'pointer' }}>
-                MYID
-            </Typography> */}
-            <Link href="/">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-10 h-10 text-white transition-colors duration-300 group-hover:text-blue-500 cursor-pointer">
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M7.864 4.243A7.5 7.5 0 0119.5 10.5c0 2.92-.556 5.709-1.568 8.268M5.742 6.364A7.465 7.465 0 004.5 10.5a7.464 7.464 0 01-1.15 3.993m1.989 3.559A11.209 11.209 0 008.25 10.5a3.75 3.75 0 117.5 0c0 .527-.021 1.049-.064 1.565M12 10.5a14.94 14.94 0 01-3.6 9.75m6.633-4.596a18.666 18.666 0 01-2.485 5.33" />
-                </svg>
-            </Link>
+            <Box sx={{ display: 'flex', gap: '1rem' }}>
+                <img width={"40"} height={"60"} style={{ borderRadius: '500px', opacity: '0.6' }} src="logo.png" alt="content" />
+
+                <Typography variant="h6" sx={{ my: 2 }}>
+                    MYID
+                </Typography>
+            </Box>
+
+
             <Divider />
             <List>
                 {navItems.map((item, index) => (
@@ -53,9 +53,12 @@ function DrawerAppBar(props) {
                                 <ListItemText primary={item} />
                             </a>
                         </ListItemButton>
+
                     </ListItem>
                 ))}
+
             </List>
+
         </Box>
     );
 
@@ -64,7 +67,7 @@ function DrawerAppBar(props) {
     return (
         <Box sx={{ display: 'flex' }}>
             <CssBaseline />
-            <AppBar component="nav" sx={{ bgcolor: '#001428' }}>
+            <AppBar component="nav" sx={{ bgcolor: 'transparent' }}>
                 <Toolbar>
                     <IconButton
                         color="inherit"
@@ -75,23 +78,37 @@ function DrawerAppBar(props) {
                     >
                         <MenuIcon />
                     </IconButton>
+
                     <Typography
-                        variant="h6"
+                        variant="h7s"
                         component="div"
-                        sx={{ flexGrow: 1, cursor: 'pointer', display: { xs: 'none', sm: 'block' } }}
+                        sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
                     >
+                        <img width={"30"} height={"40"} style={{ borderRadius: '500px', opacity: '0.6' }} src="logo.png" alt="content" />
+
                         MYID
                     </Typography>
-
                     <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
                         {navItems.map((item, index) => (
-                            <Button
-                                key={item}
-                                href={hrefs[index]}
-                                sx={{ color: '#fff', background: 'transparent', fontWeight: 'bold', '&:hover': { color: '#87CEFA', background: 'transparent' } }}>
+                            <Button variant='text' key={item} href={hrefs[index]} sx={{ color: '#CEECF5', textTransform: 'none', fontSize: '1.2rem', fontWeight: 'bold' }}>
                                 {item}
                             </Button>
                         ))}
+
+                    </Box>
+                    <Box>
+                        <Button variant='text' href="https://myid-1.gitbook.io/web3/" target='/blank' sx={{ display: { xs: 'none', sm: 'flex' }, color: 'white', textTransform: 'none', ml: '6rem' }}>
+                            <h3>
+                                <Dock />
+                                Docs
+                            </h3>
+                        </Button>
+                        <Button variant='text' href="https://medium.com/@My-ID" target='_blank' sx={{ display: { xs: 'none', sm: 'flex' }, color: 'white', textTransform: 'none', ml: '6rem' }}>
+                            <h3>
+                                <Newspaper />
+                                News
+                            </h3>
+                        </Button>
                     </Box>
                 </Toolbar>
             </AppBar>
@@ -115,5 +132,13 @@ function DrawerAppBar(props) {
         </Box>
     );
 }
+
+// DrawerAppBar.propTypes = {
+//     /**
+//      * Injected by the documentation to work in an iframe.
+//      * You won't need it on your project.
+//      */
+//     window: PropTypes.func,
+// };
 
 export default DrawerAppBar;
