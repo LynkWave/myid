@@ -44,7 +44,7 @@ const Content = () => {
                     <Container className='flex-grow'>
                         <Button variant="contained" href='https://idhub.litentry.io/my-identity' target='_blank'
                             sx={{
-                                mt: '2rem', color: 'white', textAlign: 'center', padding: "1rem", height: '2.5rem', textTransform: "none"
+                                mt: '2rem', textAlign: 'center', padding: "1rem", height: '2.5rem', textTransform: "none", bgcolor: "#084B8A"
                             }}>
                             <Typography variant="h6" fontWeight={"bold"}>Launch App</Typography>
                         </Button>
