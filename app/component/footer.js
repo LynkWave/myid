@@ -2,11 +2,12 @@ import React from 'react'
 import TwitterIcon from '@mui/icons-material/Twitter';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import BookIcon from '@mui/icons-material/Book';
+import { Email } from '@mui/icons-material';
 import { Box, Container, Typography, Grid } from '@mui/material';
 
 const Footer = () => {
     return (
-        <>
+        <Box sx={{ mt: '2rem', }}>
             <Grid container sx={{
                 display: 'flex',
                 flexDirection: 'row',
@@ -34,40 +35,48 @@ const Footer = () => {
                     >
                         {/* Twitter */}
                         <div style={{ flex: 1 }}>
-                            <a href="https://twitter.com/MYID2022">
+                            <a href="https://twitter.com/MYID2022" target='_blank'>
                                 <TwitterIcon size={25} style={{ color: 'white' }} />
                             </a>
                         </div>
 
                         {/* Telegram */}
                         <div style={{ flex: 1 }}>
-                            <a href="http://t.me/MYIDweb3">
+                            <a href="http://t.me/MYIDweb3" target='_blank'>
                                 <TelegramIcon size={25} style={{ color: 'white' }} />
                             </a>
                         </div>
 
                         {/* GitBook */}
                         <div style={{ flex: 1 }}>
-                            <a href="https://myid-1.gitbook.io/web3/">
+                            <a href="https://myid-1.gitbook.io/web3/" target='_blank'>
                                 <BookIcon size={25} style={{ color: 'white' }} />
                             </a>
                         </div>
+                        {/* <div style={{ flex: 1 }}>
+                            <a href="official@myidweb3.com" target='_blank'>
+                                <Email size={25} style={{ color: 'white' }} />
+                            </a>
+                        </div> */}
 
                     </Box>
-                    <Box sx={{ padding: "20px" }} >
-                        <Typography variant='h5' sx={{ fontWeight: "bold" }} >
+                    <Box sx={{ padding: "20px", display: 'flex', flexDirection: 'column' }} >
+                        <Typography variant='h6' sx={{ fontWeight: "bold", color: 'white' }} >
                             MyID
                         </Typography>
-                        <Typography variant='h6' sx={{ fontWeight: "thin", color: 'white' }} >
+                        {/* <Typography variant='h8' sx={{ fontWeight: "bold", color: 'white' }} >
                             by LynkWave
+                        </Typography> */}
+                        <Typography variant='h8' sx={{ color: 'white' }} >
+                            Contact us: official@myidweb3.com
                         </Typography>
+
                     </Box>
                 </Grid>
                 <Grid item sx={{ display: 'flex', flexDirection: "column", color: "white" }} >
                     <a style={{ fontWeight: 'bold', marginBottom: "15px" }} >Features</a>
                     <a >Security</a>
                     <a >Web3</a>
-                    <a >White paper</a>
                     <a >Resources</a>
                 </Grid>
                 <Grid item xs={1} sm={1} md={2} lg={3} xl={3} sx={{ display: 'flex', flexDirection: "column", color: "white" }} >
@@ -75,7 +84,6 @@ const Footer = () => {
                     <a >API</a>
                     <a >Partners</a>
                     <a >Help</a>
-                    <a >Community</a>
                 </Grid>
             </Grid>
             <Box sx={{ textAlign: "center", justifyContent: 'center', alignItems: 'center' }}>
@@ -84,7 +92,7 @@ const Footer = () => {
                 <span className="inline-flex sm:ml-auto sm:mt-0 mt-2 justify-center sm:justify-start">
                 </span>
             </Box  >
-        </>
+        </Box>
 
     )
 }

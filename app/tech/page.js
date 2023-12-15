@@ -30,12 +30,17 @@ const page = () => {
     ]
     return (
 
-        <Box sx={{ mt: '6rem', width: '100%', px: '300px', py: '100px' }}>
+        <Container sx={{
+            mt: '2rem', width: '100%', display: "flex",
+            flexDirection: 'column',
+            justifyContent: "center",
+            alignItems: "center"
+        }}>
             <Typography
                 sx={{
                     display: "flex",
                     width: "full",
-                    py: '50px',
+                    py: '6rem',
                     justifyContent: "center",
                     alignItems: "center",
                     fontWeight: "bold",
@@ -49,18 +54,19 @@ const page = () => {
                 rowSpacing={7}
                 columnSpacing={{ xs: 1, sm: 2, md: 3 }}
                 sx={{
-                    display: "flex",
+                    display: 'flex',
+                    flexDirection: { xs: "column", md: 'row' },
                     justifyContent: "center",
                     alignItems: "center"
                 }}
             >
                 {data.map((card, index) => (
                     <Grid
-                        
+
                         item xs={6}
                     >
                         <Card
-                            sx={{ maxWidth: 345 }}>
+                            sx={{ maxWidth: 360 }}>
                             <CardMedia
                                 sx={{ height: 140 }}
                                 image={`/${card.image}`}
@@ -68,7 +74,7 @@ const page = () => {
                             />
                             <CardContent>
                                 <Typography
-                                 gutterBottom variant="h5" component="div">
+                                    gutterBottom variant="h5" component="div">
                                     {card.title}
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
@@ -79,7 +85,7 @@ const page = () => {
                     </Grid>
                 ))}
             </Grid>
-        </Box>
+        </Container>
     )
 }
 

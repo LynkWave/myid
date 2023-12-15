@@ -60,6 +60,7 @@ export const Compart = () => {
             paddingY: '50px',
             padding: '50px',
             display: 'flex',
+            flexDirection: { xs: "column", md: 'column', lg: 'row' },
             justifyContent: 'space-between',
             alignItems: 'center',
             width: '100%', // You can adjust the width as needed
@@ -135,12 +136,12 @@ export const Compart = () => {
                             gap: 3,
                             padding: 5
                         }}>
-                            <Typography
+                        <Typography
                             data-aos="fade-right"
                             data-aos-once="true"
                             data-aos-duration="500"
                             // data-aos-delay={index * 200}
-                             variant="h4">{selectedData.title}</Typography>
+                            variant="h4">{selectedData.title}</Typography>
 
                         <img
                             data-aos="zoom-out"
@@ -151,17 +152,17 @@ export const Compart = () => {
                             style={{ borderRadius: '10px', margin: "20px", objectFit: "fill" }}
                             src={selectedData.image}
                             alt={selectedData.title} />
-                        <Typography 
-                        data-aos="fade-right"
-                        data-aos-once="true"
-                        data-aos-duration="500"
-                        data-aos-delay="200"
-                        variant="h6">{selectedData.subTitle}</Typography>
                         <Typography
-                        data-aos="fade-right"
-                        data-aos-once="true"
-                        data-aos-duration="1000"
-                        data-aos-delay="400"
+                            data-aos="fade-right"
+                            data-aos-once="true"
+                            data-aos-duration="500"
+                            data-aos-delay="200"
+                            variant="h6">{selectedData.subTitle}</Typography>
+                        <Typography
+                            data-aos="fade-right"
+                            data-aos-once="true"
+                            data-aos-duration="1000"
+                            data-aos-delay="400"
                         >{selectedData.text}</Typography>
                     </Box>
                 )}
