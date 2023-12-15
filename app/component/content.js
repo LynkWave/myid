@@ -8,7 +8,7 @@ const Content = () => {
     return (
 
         <Box sx={{ display: 'flex', flexDirection: 'row', maxWidth: "600px", m: '1rem' }}>
-            <Box sx={{ maxWidth: '50vh', marginTop: '18vh' }}>
+            <Box sx={{ maxWidth: '40vh', marginTop: '18vh' }}>
                 <Box sx={{ display: 'flex', flexDirection: 'column' }}>
                     <Typography variant="h2"
                         data-aos="flip-up"
@@ -44,7 +44,7 @@ const Content = () => {
                     <Container className='flex-grow'>
                         <Button variant="contained" href='https://idhub.litentry.io/my-identity' target='_blank'
                             sx={{
-                                color: 'white', textAlign: 'center', padding: "1rem", height: '2.5rem', textTransform: "none"
+                                mt: '2rem', color: 'white', textAlign: 'center', padding: "1rem", height: '2.5rem', textTransform: "none"
                             }}>
                             <Typography variant="h6" fontWeight={"bold"}>Launch App</Typography>
                         </Button>

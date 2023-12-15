@@ -56,9 +56,7 @@ export const Compart = () => {
     ]
     return (<>
         <Box sx={{
-            padding: '50px',
             paddingY: '50px',
-            padding: '50px',
             display: 'flex',
             flexDirection: { xs: "column", md: 'column', lg: 'row' },
             justifyContent: 'space-between',

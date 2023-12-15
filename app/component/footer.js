@@ -16,7 +16,7 @@ const Footer = () => {
                 // height: '200px',
                 width: '100%',
                 bgcolor: '#001428',
-                paddingX: "20px"
+                padding: "1rem"
             }}>
                 <Grid item
                     sx={{ display: 'flex', flexDirection: 'column', marginX: '50px', textAlign: "center", justifyContent: 'center', alignItems: 'center' }} >
