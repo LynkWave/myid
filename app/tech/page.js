@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image';
 import { Box, Container, Typography } from '@mui/material'
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -62,7 +63,7 @@ const page = () => {
             >
                 {data.map((card, index) => (
                     <Grid
-
+                        key={index}
                         item xs={6}
                     >
                         <Card
